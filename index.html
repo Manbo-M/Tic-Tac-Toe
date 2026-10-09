@@ -2,10 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
- <link rel="icon" type="image/png" href="bord.png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Tic-Tac-Toe</title>
+
+  <!-- 基本SEO設定 -->
+  <title>三目並べ｜CPU対戦・2人対戦</title>
+  <meta name="description" content="レトロなドット絵風の無料まるバツゲーム。2人対戦やCPU対戦に対応し、初心者向けから強いCPUまで楽しめます。">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#121318">
+
+  <!-- OGP：SNSで共有したときの表示設定 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="三目並べ｜CPU対戦・2人対戦">
+  <meta property="og:description" content="レトロなドット絵風の無料の三目並べ。無料・広告なしでプレイ可能！2人対戦やCPU対戦を楽しもう！">
+  <meta property="og:image" content="bord.png">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="bord.png">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Retro Pixel Font (Press Start 2P) -->
@@ -163,7 +176,7 @@
       <div class="flex flex-col items-center">
         <span class="text-gray-300 mb-1 flex items-center gap-1">
           <img src="maru.png" alt="O" class="w-4 h-4 marker-o inline" />
-          (first)
+          First
         </span>
         <span id="score-o" class="text-green-400 font-bold text-sm">0</span>
       </div>
@@ -174,7 +187,7 @@
       <div class="flex flex-col items-center">
         <span class="text-gray-300 mb-1 flex items-center gap-1">
           <img src="batu.png" alt="X" class="w-4 h-4 marker-x inline" />
-          (second)
+          Second
         </span>
         <span id="score-x" class="text-red-400 font-bold text-sm">0</span>
       </div>
